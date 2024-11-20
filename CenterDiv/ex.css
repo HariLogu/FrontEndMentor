@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* -------using flex--------- */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+
+    /* -----using absolute------ */
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ; */
+
+    /* -------using grid----- */
+
+    /* display: grid;
+    place-items: center;
+    height: 100vh; */
+
+    /* --------without display prop---- */
+
+    /* text-align: center;
+    align-content: center;
+    height: 400px; */
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(5, 1, 255);
+    /* ----using this--- */
+    
+    /* text-align: center;
+    align-content: center; */
+}
+.container p{
+    color: #fff;
+}
