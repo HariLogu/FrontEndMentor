@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#000;
+}
+button{
+    background-color: #201c1c;
+    border:none;
+    padding: 1em 2em;
+    font-size: medium;
+    border-radius: 100px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button::after{
+    content: '';
+    background-color: red;
+    height: 108%;
+    width: 102%;
+    position: absolute;
+    border-radius: 1000px;
+    background: linear-gradient(to bottom right,rgb(0, 119, 255),purple);
+    z-index: -1;
+}
+button:hover{
+    z-index: 1;
+    box-shadow: 40px 0 100px rgba(0, 119, 255, 0.252),
+    -40px 0 100px rgba(204, 0, 255, 0.591);
+    cursor: pointer;
+}
+
