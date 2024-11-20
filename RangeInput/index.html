@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <span class="rangeValue">0</span>
+        <input class="bar" type="range" min="0" max="1000" onchange="Customrange(this.value)">
+    </div>
+    <script>
+        const bar=document.querySelector(".bar");
+        const rangeValue=document.querySelector(".rangeValue");
+
+        function Customrange(value){
+            rangeValue.innerHTML=value;
+        }
+    </script>
+</body>
+</html>
