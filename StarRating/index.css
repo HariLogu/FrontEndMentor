@@ -1,0 +1,81 @@
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: rgba(56, 56, 56, 0.424);
+    width: 200px;
+    height:fit-content;
+    color: #ccc;
+    border-radius: 5px;
+    padding: 20px 25px;
+}
+.logo{
+    background-color: rgba(51, 51, 51, 0.17);
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+}
+.logo p{
+    color: rgb(239, 128, 37);
+}
+.question #one{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: -5px;
+}
+.question #desc{
+    color: #ffffff7c;
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 15px;
+}
+.rating{
+    display: flex;
+    gap: 20px;
+}
+.rating button{
+    background-color: rgba(56, 56, 56, 0.424);
+    border: none;
+    color: #ffffff7c;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor:pointer;
+
+}
+.submit button:hover{
+    cursor:pointer;
+    background-color: rgba(255, 99, 27, 0.857);
+}
+.submit button:active{
+    background-color: rgb(255, 99, 27);
+}
+.rating button:focus{
+    background-color: rgb(255, 99, 27);
+    color: black;
+}
+.submit button{
+    background-color: rgb(255, 99, 27);
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    height: 25px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.941);
+}
+.submit{
+    margin-top: 15px;
+}
