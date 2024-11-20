@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 250px;
+    height: fit-content;
+    background-color: #7d1515ac;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    padding: 10px 15px;
+}
+.container img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+.btn button{
+    color: #fff;
+    background-color: rgb(116, 55, 55);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 11px;
+    font-weight:normal;
+}
+#name{
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+#place{
+    font-size: small;
+    margin-bottom: 8px;
+    color: rgb(87, 197, 87);
+}
+.role p{
+    font-size: smaller;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: rgba(116, 55, 55, 0.677);
+}
+.btn button:active{
+    background-color: rgb(116, 55, 55);
+}
