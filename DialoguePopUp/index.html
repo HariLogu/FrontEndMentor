@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="showDiaLog(true)" >LOGIN</button>
+        <dialog id="dia">
+            <h2>LOGIN</h2>
+            <form action="">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>login</button>
+                <button id="close" onclick="showDiaLog(false)">close</button>
+            </form>
+        </dialog>
+    </div>
+
+    <script>
+        const dia=document.getElementById('dia');
+        const showDiaLog=((show)=>{show?dia.showModal(): dia.close()})
+        
+    </script>
+</body>
+</html>
