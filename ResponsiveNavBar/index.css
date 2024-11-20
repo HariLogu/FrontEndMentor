@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("Y.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+nav{
+    background-color: rgb(245, 107, 61);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav li{
+    margin: 0px 8px;
+    display: inline-block;
+}
+nav a{
+    color: rgb(79, 56, 228);
+    text-decoration: none;
+}
+.logo{
+    font-weight: bolder;
+    font-size: 17px;
+    color: rgb(43, 20, 194);
+}
+nav ul li :hover{
+    color: #fffffffa;
+}
+.menu-line{
+    height: 2px;
+    width: 20px;
+    background-color: rgb(79, 56, 228);
+    margin-bottom: 3px;
+}
+.menu{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 3px;
+    margin-right: 20px;
+    display: none;
+}
+.menu:hover{
+    background-color: rgba(226, 96, 15, 0.649);
+}
+@media all and (max-width:540px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 5px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 5px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .showmenu{
+        display: block;
+    }
+}
+
